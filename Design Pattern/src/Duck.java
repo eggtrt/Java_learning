@@ -15,4 +15,12 @@ public abstract class Duck {
     public void swim() {
         System.out.println("All ducks can swim!");
     }
+
+    public void setFlyBehavior(FlyBehavior behavior) {
+        flyBehavior = behavior;
+    }
+
+    public void setQuackBehavior(QuackBehavior behavior) {
+        quackBehavior = behavior;
+    }
 }

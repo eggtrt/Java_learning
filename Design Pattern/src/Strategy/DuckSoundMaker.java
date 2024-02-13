@@ -1,3 +1,4 @@
+package Strategy;
 public class DuckSoundMaker {
     QuackBehavior quackBehavior;
 

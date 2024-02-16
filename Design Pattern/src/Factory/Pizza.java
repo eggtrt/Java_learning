@@ -4,8 +4,13 @@ import java.util.ArrayList;
 
 public abstract class Pizza {
     String name;
-    String dough;
-    String sauce;
+    Dough dough;
+    Sauce sauce;
+    Veggies veggies[];
+    Cheese cheese;
+    Pepperoni pepperoni;
+    Clams clam;
+    
     ArrayList topping = new ArrayList<>();
 
     void prepare() {

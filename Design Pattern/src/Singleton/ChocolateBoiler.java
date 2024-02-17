@@ -3,16 +3,26 @@ package Singleton;
 public class ChocolateBoiler {
     private boolean empty;
     private boolean boiled;
-    private static ChocolateBoiler uniqueBoiler;
+    // private static ChocolateBoiler uniqueBoiler;
+    private volatile static ChocolateBoiler uniqueBoiler;
 
     private ChocolateBoiler() {
         empty = true;
         boiled = false;
     }
 
-    public static synchronized ChocolateBoiler getInstance() {
+    public static ChocolateBoiler getInstance() {
+        // if (uniqueBoiler == null) {
+        //     uniqueBoiler = new ChocolateBoiler();
+        // }
+
+        // return uniqueBoiler;
         if (uniqueBoiler == null) {
-            uniqueBoiler = new ChocolateBoiler();
+            synchronized (ChocolateBoiler.class) {
+                if (uniqueBoiler == null) {
+                    uniqueBoiler = new ChocolateBoiler();
+                }
+            }
         }
 
         return uniqueBoiler;

@@ -3,10 +3,19 @@ package Singleton;
 public class ChocolateBoiler {
     private boolean empty;
     private boolean boiled;
+    private static ChocolateBoiler uniqueBoiler;
 
-    public ChocolateBoiler() {
+    private ChocolateBoiler() {
         empty = true;
         boiled = false;
+    }
+
+    public static ChocolateBoiler getInstance() {
+        if (uniqueBoiler == null) {
+            uniqueBoiler = new ChocolateBoiler();
+        }
+
+        return uniqueBoiler;
     }
     private boolean isEmpty() {
         return empty;

@@ -1,10 +1,11 @@
 package Command;
 
-public class RemoteContrl {
+public class RemoteContrlWithUndo {
     Command[] onCommands;
     Command[] offCommands;
+    Command undoCommand;
 
-    public RemoteContrl() {
+    public RemoteContrlWithUndo() {
         onCommands = new Command[7];
         offCommands = new Command[7];
 
@@ -13,6 +14,7 @@ public class RemoteContrl {
             onCommands[i] = noCommand;
             offCommands[i] = noCommand;
         }
+        undoCommand = noCommand;
     }
 
     public void setCommnd(int slot, Command onCommand, Command offCommand) {
@@ -22,10 +24,16 @@ public class RemoteContrl {
 
     public void onButtonWasPressed(int slot) {
         onCommands[slot].execute();
+        undoCommand = onCommands[slot];
     }
 
     public void offButtonWasPressed(int slot) {
         offCommands[slot].execute();
+        undoCommand = offCommands[slot];
+    }
+
+    public void undoButtonWasPressed() {
+        undoCommand.undo();
     }
     
 }

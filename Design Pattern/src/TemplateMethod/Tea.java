@@ -1,6 +1,6 @@
 package TemplateMethod;
 
-public class Tea extends CaffeineBeverage{
+public class Tea extends CaffeineBeverageWithHook{
     void brew() {
         System.out.println("brew tea");
     }

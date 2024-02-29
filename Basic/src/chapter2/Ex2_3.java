@@ -1,3 +1,4 @@
+package chapter2;
 class Ex2_3 {
 	public static void main(String args[]) {
 		System.out.println(5+3);    

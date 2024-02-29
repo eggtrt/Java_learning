@@ -1,3 +1,4 @@
+package chapter2;
 class Ex2_5 {
    public static void main(String args[]) {
 		int x = 10;

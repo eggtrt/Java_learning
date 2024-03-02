@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Basic/src/Basic.iml" filepath="$PROJECT_DIR$/Basic/src/Basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Basic/Basic1.iml" filepath="$PROJECT_DIR$/Basic/Basic1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Design Pattern/src/Design Pattern.iml" filepath="$PROJECT_DIR$/Design Pattern/src/Design Pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Design Pattern/Design Pattern1.iml" filepath="$PROJECT_DIR$/Design Pattern/Design Pattern1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java_learning.iml" filepath="$PROJECT_DIR$/.idea/Java_learning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IdeaProjects/basic/basic.iml" filepath="$PROJECT_DIR$/IdeaProjects/basic/basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IdeaProjects/basic/out/out.iml" filepath="$PROJECT_DIR$/IdeaProjects/basic/out/out.iml" />
+    </modules>
+  </component>
+</project>
